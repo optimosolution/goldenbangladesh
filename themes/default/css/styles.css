@@ -1,0 +1,82 @@
+/* Sticky footer styles start */
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 60px;
+}
+#footer {
+    background-color: #f5f5f5;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.credit{
+    margin-top: 22px;
+}
+/* Sticky footer styles end */
+.ditectory_title{
+    font-size: 20px;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    color: #C8001E;
+    margin: 20px 0px 10px 0px;
+}
+a.news_title:link, a.news_title:visited{
+    font-size: 20px;
+    color: #186611;
+    text-decoration: none;
+}
+a.news_title:hover{
+    color: #000;
+    text-decoration: none;
+}
+a.read_more:link, a.read_more:visited{
+    font-size: 14px;
+    color: #186611;
+    text-decoration: none;
+}
+a.read_more:hover{
+    color: #000;
+    text-decoration: none;
+}
+.news_date{
+    color: #999999;
+    font-size: 12px;
+}
+.fieldset_title{
+    background-color: #F0F0F0;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.inner_title{
+    background-color: #F0F0F0;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 5px;
+}
