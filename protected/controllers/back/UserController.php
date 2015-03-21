@@ -66,7 +66,7 @@ class UserController extends BackEndController {
 
         $this->render('view', array(
             'model' => $this->loadModel($id),
-            'model_profile' => $this->loadModelProfile($id),
+            'model_profile' => $model_profile,
         ));
     }
 
@@ -162,7 +162,7 @@ class UserController extends BackEndController {
                 }
 
                 if ($model->save()) {
-                    $model_profile->user_id = $model->id;
+                    //$model_profile->user_id = $model->id;
                     $model_profile->save();
                     Yii::app()->user->setFlash('success', 'User has been updated successfully');
                     $this->redirect(array('view', 'id' => $model->id));
@@ -255,13 +255,6 @@ class UserController extends BackEndController {
      */
     public function loadModel($id) {
         $model = User::model()->findByPk($id);
-        if ($model === null)
-            throw new CHttpException(404, 'The requested page does not exist.');
-        return $model;
-    }
-
-    public function loadModelProfile($id) {
-        $model = UserProfile::model()->findByAttributes(array('user_id' => $id));
         if ($model === null)
             throw new CHttpException(404, 'The requested page does not exist.');
         return $model;
