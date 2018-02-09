@@ -166,7 +166,7 @@ Yii::app()->clientScript->registerScript('search', "
                     ?>                    
                     <div class="row-fluid">
                         <div class="span12">
-                            <?php echo $form_search->DropDownList($model, 'user_type', array('1' => 'General People', '2' => 'Eminent People'), array('class' => 'span12', 'id' => 'user_type')); ?>
+                            <?php echo $form_search->DropDownList($model, 'user_type', array('1' => 'Volunteer', '2' => 'Eminent People'), array('class' => 'span12', 'id' => 'user_type')); ?>
                         </div>
                     </div>
                     <div class="row-fluid user_type 2">
