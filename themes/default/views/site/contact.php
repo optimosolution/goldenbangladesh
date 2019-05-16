@@ -33,13 +33,14 @@ $this->breadcrumbs = array(
             </div>
             <div class="span4">
                 <strong>Address: </strong><br />
-                Golden Associates, House#6 (Ground Floor)<br />
-                Road-1, Sector-4, Uttara<br />
+                Golden Associates <br />
+                House#07 (Ground Floor)<br />
+                Road-2/B, Sector-4, Uttara<br />
                 Dhaka, 1230<br />
                 Bangladesh.<br />                
                 <strong>E-mail: </strong>goldenassociates@gmail.com<br />
-                <strong>Telephone: </strong>8951233<br />
-                <strong>Mobile: </strong>+880 1911 485949 
+                <strong>Cell: </strong>+880 1911485949<br />
+                <strong>Mobile: </strong>+880 1970079001-6 
             </div>
         </div>
         <?php echo $form->textAreaControlGroup($model, 'body', array('rows' => 6, 'class' => 'span12')); ?>
